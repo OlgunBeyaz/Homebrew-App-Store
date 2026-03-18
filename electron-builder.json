@@ -1,0 +1,22 @@
+{
+  "appId": "com.akcocuk.homebrewappstore",
+  "productName": "Homebrew App Store",
+  "copyright": "Copyright © 2026 Kemal Akçocuk",
+  "files": [
+    "**/*"
+  ],
+  "mac": {
+    "category": "public.app-category.utilities",
+    "target": ["dmg"],
+    "icon": "homebrew.png"
+  },
+  "dmg": {
+    "background": null,
+    "iconSize": 80,
+    "window": { "width": 500, "height": 300 },
+    "contents": [
+      { "x": 130, "y": 150 },
+      { "x": 370, "y": 150, "type": "link", "path": "/Applications" }
+    ]
+  }
+}

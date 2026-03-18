@@ -1,0 +1,17 @@
+{
+  "name": "homebrew-appstore",
+  "version": "1.0.0",
+  "description": "Electron App Store-like GUI for Homebrew on macOS (Intel)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "24.6.0"
+  }
+}

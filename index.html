@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homebrew App Store</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #222; color: #fff; padding: 1rem; text-align: center; }
+    #app-list { padding: 2rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .app-item { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; min-height: 220px; }
+    .app-icon { width: 48px; height: 48px; border-radius: 12px; margin-bottom: 0.5rem; background: #eee; object-fit: contain; }
+    .app-title { font-size: 1.1rem; font-weight: bold; text-align: center; margin-bottom: 0.2rem; }
+    .app-desc { font-size: 0.95rem; color: #444; text-align: center; margin-bottom: 0.5rem; }
+    .app-actions { margin-top: auto; }
+    button { margin-right: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Homebrew App Store</h1>
+    <input id="search" type="text" placeholder="Suche Apps..." style="margin-top:1rem; width:60%; max-width:400px; padding:0.5rem; border-radius:8px; border:1px solid #ccc; font-size:1rem;" />
+  </header>
+  <div id="app-list">
+    <div>Lade Homebrew Apps ...</div>
+  </div>
+  <script src="renderer.js"></script>
+  <footer style="background:#222; color:#fff; text-align:center; padding:1rem; margin-top:2rem; font-size:0.95rem;">
+    <div>Entwickelt von Kemal Akçocuk &mdash; <a href="mailto:akcocuk@outlook.com" style="color:#fff; text-decoration:underline;">akcocuk@outlook.com</a></div>
+  </footer>
+</body>
+</html>
